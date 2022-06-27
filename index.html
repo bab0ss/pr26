@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+		let num = Math.ceil(Math.random()*100);
+		let number;
+		let i = 10;
+		do{
+			number = prompt("Вгадайте число від 0 до 100:", '');
+		 	if(number === null){
+		 		alert("Введіть число:");
+		 	}
+		 	else if(+number>num){
+		 	alert('Забагато, у Вас залишилось '+ --i + ' спроб:');
+			} 
+			else if(+number<num){
+			 	alert('Замало, у Вас залишилось ' + --i + ' спроб:');
+			} 
+			else{
+			 	alert('Ви вгадали: '+ num);
+			}
+		} 
+		while(number != num && number != null && i != 0);
+	</script>	 	
+</body>
+</html>
